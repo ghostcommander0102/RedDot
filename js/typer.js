@@ -59,6 +59,9 @@ $(document).ready(function () {
         e.preventDefault();
         var el = $(this).attr('href');
         scrollToElement(el);
+        setTimeout(function () {
+                $(".project.project-default.wrap").addClass("active");
+        }, 2000);   
     });
     $("#header")[0].addEventListener("wheel", function (e) {
 
